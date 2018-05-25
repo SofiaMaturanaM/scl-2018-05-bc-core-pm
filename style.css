@@ -47,6 +47,7 @@ body {
 #text {
     background-color: #46cdcf;
     border-radius: 4px;
+    text-align: center;
 }
 
 #reload {
