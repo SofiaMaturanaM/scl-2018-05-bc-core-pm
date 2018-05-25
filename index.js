@@ -1,1 +1,3 @@
-/* Acá va tu código */
+// const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let cipherEncodeButton = document.getElementById("decodeButton");
