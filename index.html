@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<div id="box">
+    <div id="text">
+        <h1> Cifrador de texto</h1>
+        <p>¿Quieres cifrar un texto para que nadie lo vea o para enviarle un mensaje secreto a alguien? ¡Prueba este cifrador de texto! Utilizamos cifrado César, que consiste en desplazar el alfabeto una cierta cantidad de espacios (que puedes elegir), para
+            que lo que escribas esté a salvo de ojos curiosos. También puedes descifrar mensajes
+        </p> <br></div>
 
-  <div id="root"></div>
+    <!-- Campo de texto para determinar el número de espacios que se mueve
+   el abc -->
+    <div id="numberBox">
+        <p>Escribe el número de espacios que se desplaza el alfabeto.
+        </p><span><input type="text" value="" name="offsetNumber">
+  </input></span><br> <button onclick="offset()" id="ok" class="button">Ok!</button>
+    </div>
 
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
+    <!-- Campo de texto a crifrar y su respectivo botón -->
+    <div id="encodeTextBox">
+        <br> <textarea rows="10" cols="50" value="Escribe tu texto a 
+    descifrar aquí" name="encodeText" class="boxText"></textarea><br>
+        <br>
+        <div><button onclick="encode()" class="button">Cifrar</button></div> <br>
+    </div>
+
+    <!-- Campo de texto a descrifrar y su respectivo botón -->
+    <div id="decodeTextBox">
+        <br> <textarea rows="10" cols="50" value="Escribe tu texto a 
+    descifrar aquí" name="decodeText" class="boxText"></textarea><br>
+        <br>
+        <div><button onclick="decode()" class="button">Descifrar</button></div>
+
+    </div>
+
+    <div id="root"></div>
+
+    <!-- Botón de recarga de página -->
+    <br> <input id="reload" class='button' type='button' value='¡De nuevo!' onclick='location.reload()'>
+
+</div>
+<script src="cipher.js"></script>
+<script src="index.js"></script>
 </body>
+
 </html>
