@@ -1,1 +1,56 @@
-/* Acá va tu código */
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #48466d;
+}
+
+#box {
+    background-color: #abedd8;
+    height: auto;
+    width: auto;
+    border: 10px solid #abedd8;
+}
+
+#encodeTextBox {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 150px;
+    top: 50px;
+}
+
+#decodeTextBox {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 700px;
+    bottom: 150px;
+}
+
+
+/* #root {} */
+
+.boxText {
+    padding: 5px;
+    border: 3px;
+}
+
+.button {
+    background-color: #46cdcf;
+    border: #46cdcf;
+    position: relative;
+    left: 125px;
+    border-radius: 5px;
+    color: #48466d;
+}
+
+#text {
+    background-color: #46cdcf;
+    border-radius: 4px;
+}
+
+#reload {
+    position: relative;
+    bottom: 150px;
+    left: 550px;
+}
