@@ -11,7 +11,7 @@ window.cipher = {
         for (i = 0; i < string.lenght; i++) {
 
             // para ubicar en valor ASCCI los caracteres ingresados
-            let ingresedText = string.CharCodeAt(i);
+            // let ingresedText = string.CharCodeAt(i);
 
             // condicional para codificar caracteres en mayúscula
             if (ingresedText >= 65 && ingresedText <= 90) {
